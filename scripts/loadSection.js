@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadSection('profile', './sectionPage/profile.html');
   loadSection('about', './sectionPage/about.html');
   loadSection('skills', './sectionPage/skills.html');
-  loadSection('projects', './sectionPage/projects.html');
+  // loadSection('projects', './sectionPage/projects.html');
   loadSection('contact', './sectionPage/contact.html');
   loadSection('footer', './sectionPage/footer.html');
 });

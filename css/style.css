@@ -302,10 +302,6 @@ section {
   display: flex;
 }
 
-.about-pic {
-  border-radius: 2rem;
-}
-
 .arrow {
   position: absolute;
   right: -5rem;
@@ -389,6 +385,18 @@ article .icon {
   background: var(--white);
 }
 
+/* todo this will the start of slider project image */
+
+.slider img {
+  width: 75%;
+  height: 350px;
+  border: solid 7px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* todo this will the end of slider project image */
+
 .project-img {
   border-radius: 1rem;
   width: 50vh;
@@ -396,8 +404,12 @@ article .icon {
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 1rem 1rem 0rem 1rem;
   color: var(--black);
+}
+
+.project-text {
+  margin-bottom: 1rem;
 }
 
 .project-btn {
