@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Get references to DOM elements
   const moonIcon = document.getElementById('icon');
   const slideContainer = document.getElementById('projectImg');
+  const desktopNav = document.getElementById('desktop-nav');
 
   // Check if moonIcon is found before accessing its properties
   if (moonIcon) {
@@ -14,9 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if (document.body.classList.contains('dark-theme')) {
         moonIcon.src = "./image/sun.png";
         slideContainer.style.borderColor = 'white';
+        desktopNav.style.backgroundColor = 'rgb(23, 23, 23)';
       } else {
         moonIcon.src = "./image/moon.png";
         slideContainer.style.borderColor = 'black';
+        desktopNav.style.backgroundColor = 'rgb(239, 239, 239)';
+
       }
     });
   } else {
@@ -27,16 +31,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let imgSlide = document.getElementById('projectImg');
   let projectUrl = document.getElementById('projectGitUrl');
-  let img = ['project1.png', 'project2-dark.png', 'project-3.png'];
+  let title = document.getElementById('project-title');
+
+  let imgArr = ['project1.png', 'project2-dark.png', 'project-3.png'];
   // todo change the url into url of your live demo link but first do your project to do this
-  let url = ['https://github.com/Juliusnowel/SantiagoJuliusNowel', 'https://github.com/Juliusnowel/SantiagoJuliusNowel', 'https://github.com/Juliusnowel/SantiagoJuliusNowel'];
+  let urlArr = ['https://github.com/Juliusnowel/SantiagoJuliusNowel', 'https://github.com/Juliusnowel/SantiagoJuliusNowel', 'https://github.com/Juliusnowel/SantiagoJuliusNowel'];
+  let titleArr = ['School Website', 'Multiplication Website', 'Facebook Replica'];
   let currentIndex = 0;
 
   // Function to change the image
   const changeImage = () => {
-    currentIndex = (currentIndex + 1) % img.length; // Increment the index and wrap around
-    imgSlide.src = "/image/" + img[currentIndex]; // Update the image source
-    projectUrl.setAttribute('href', url[currentIndex]);
+    currentIndex = (currentIndex + 1) % imgArr.length; // Increment the index and wrap around
+    imgSlide.src = "/image/" + imgArr[currentIndex]; // Update the image source
+    projectUrl.setAttribute('href', urlArr[currentIndex]); // Update the Url of the image
+    title.innerHTML = titleArr[currentIndex];
   };
 
   // Set the interval to change the image every 3 seconds
