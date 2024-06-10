@@ -16,11 +16,21 @@ document.addEventListener('DOMContentLoaded', () => {
         moonIcon.src = "./image/sun.png";
         slideContainer.style.borderColor = 'white';
         desktopNav.style.backgroundColor = 'rgb(23, 23, 23)';
+
+        let allTags = document.querySelectorAll('h3');
+        allTags.forEach(function(Tag) {
+          // Do something with each <h3> tag
+          Tag.style.color = 'white';
+        });
       } else {
         moonIcon.src = "./image/moon.png";
         slideContainer.style.borderColor = 'black';
         desktopNav.style.backgroundColor = 'rgb(239, 239, 239)';
-
+      
+        let allTags = document.querySelectorAll('h3');
+        allTags.forEach(function(Tag) {
+          Tag.style.color = 'black';
+        });
       }
     });
   } else {
