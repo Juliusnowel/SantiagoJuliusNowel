@@ -299,15 +299,20 @@ section {
   position: relative;
 }
 
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+.section-container {
+  gap: 4rem;
+  height: 80%;
 }
 
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .about-containers, .about-details-container {
@@ -324,19 +329,8 @@ section {
   text-align: center;
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
-.section_pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
-
-.section_pic-container img {
-  height: 410px;
+.details-container .icon {
+  border-radius: 5px;
 }
 
 /* SKILLS SECTION */
@@ -378,6 +372,8 @@ article .icon {
   cursor: default;
   width: 60px;
   height: 55px;
+  border-radius: 0;
+  border: none;
 }
 
 /* PROJECTS SECTION */
