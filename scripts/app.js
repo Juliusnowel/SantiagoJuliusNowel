@@ -41,14 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let imgSlide = document.getElementById('projectImg');
   let projectUrlGit = document.getElementById('projectGitUrl');
-  let projectUrlLive = document.getElementById('projectGitUrl');
+  let projectUrlLive = document.getElementById('projectLiveUrl');
   let title = document.getElementById('project-title');
   let aboutProject = document.getElementById('projectAboutText');
 
   let imgArr = ['project1.png', 'project2-dark.png', 'project-3.png'];
   // todo change the url into url of your live demo link but first do your project to do this
-  let gitUrlArr = ['https://github.com/Juliusnowel/SantiagoJuliusNowel', 'https://github.com/Juliusnowel/SantiagoJuliusNowel', 'https://github.com/Juliusnowel/SantiagoJuliusNowel'];
-  let liveUrlArr = ['https://github.com/Juliusnowel/SantiagoJuliusNowel', 'https://github.com/Juliusnowel/SantiagoJuliusNowel', 'https://github.com/Juliusnowel/SantiagoJuliusNowel'];
+  let gitUrlArr = ['https://github.com/Juliusnowel/academicFestivalProject', 'https://github.com/Juliusnowel/SantiagoJuliusNowel', 'https://github.com/Juliusnowel/fb_Replica'];
+  let liveUrlArr = ['https://juliusnowel.github.io/academicFestivalProject/', 'https://github.com/Juliusnowel', 'https://juliusnowel.github.io/fb_Replica/'];
   let titleArr = ['School Website', 'Multiplication Website', 'Facebook Replica'];
   let aboutArr = [
     'This project is about our school during in our Academic Festival it contains how Academic Festival helps to students in their study... <br><b>HTML & CSS</b>', 
